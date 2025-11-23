@@ -118,16 +118,3 @@ SELECT raca, COUNT(*) as quantidade
 FROM usuario
 GROUP BY raca
 ORDER BY quantidade DESC;
-
-SELECT 
-    COUNT(CASE WHEN raca = 'Hyur' THEN 1 END) as hyur,
-    COUNT(CASE WHEN raca = 'Miqote' THEN 1 END) as miqote,
-    COUNT(CASE WHEN raca = 'Aura' THEN 1 END) as aura,
-    COUNT(CASE WHEN raca = 'Elezen' THEN 1 END) as elezen,
-    COUNT(CASE WHEN classe = 'Mago' THEN 1 END) as mago,
-    COUNT(CASE WHEN classe = 'Monge' THEN 1 END) as monge,
-    COUNT(CASE WHEN classe = 'Bardo' THEN 1 END) as bardo,
-    COUNT(CASE WHEN classe = 'Ninja' THEN 1 END) as ninja,
-    COUNT(CASE WHEN classe = 'Samurai' THEN 1 END) as samurai,
-    COUNT(CASE WHEN classe = 'Mago Negro' THEN 1 END) as mago_negro
-FROM usuario;
